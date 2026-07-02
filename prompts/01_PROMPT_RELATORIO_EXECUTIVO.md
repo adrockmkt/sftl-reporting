@@ -1,92 +1,3 @@
-
-
-# Prompt Mestre - Relatório Executivo Mensal
-
-## Objetivo
-Este prompt é responsável por gerar o relatório executivo mensal a partir de todos os PDFs do período de competência, correlacionando informações entre as fontes, em vez de apenas resumir arquivos individualmente.
-
-## Entradas
-- `START_HERE.md`
-- `README.md`
-- `prompts/00_MASTER_SPECIFICATION.md`
-- Todos os arquivos da pasta `prompts/`
-- Todos os arquivos da pasta `knowledge/`
-- Arquivos da pasta `history/`
-- Competência mensal mais recente em `reports/AAAA-MM/`
-- Arquivo `reports/AAAA-MM/manifest.json`
-- PDFs localizados exclusivamente em `reports/AAAA-MM/source/`
-
-## Fluxo Obrigatório
-1. Ler `START_HERE.md`.
-2. Ler `README.md`.
-3. Ler `prompts/00_MASTER_SPECIFICATION.md`.
-4. Ler todos os demais arquivos da pasta `prompts/`.
-5. Ler todos os arquivos da pasta `knowledge/`.
-6. Ler o histórico disponível em `history/`.
-7. Identificar automaticamente a competência mensal mais recente em `reports/`.
-8. Validar a existência e o conteúdo do `manifest.json` da competência.
-9. Confirmar que todos os relatórios obrigatórios estão presentes em `source/`.
-10. Ler os PDFs da competência exclusivamente a partir de `source/`.
-11. Gerar as análises individuais de GA4 e Google Search Console em `analysis/`.
-12. Correlacionar informações entre GA4, GSC, Auditoria, SEO Checker, Backlinks, Keyword Strategy e Monitoramento de Posição.
-13. Comparar as conclusões com o histórico disponível.
-14. Priorizar os fatos mais relevantes.
-15. Gerar o resumo executivo em `output/`.
-
-## Validação da Competência
-Antes de qualquer leitura analítica, validar a competência selecionada.
-
-A execução deve ser interrompida se:
-
-- `manifest.json` não existir.
-- Houver relatório obrigatório ausente.
-- Os PDFs estiverem fora da pasta `source/`.
-- A competência estiver ambígua.
-- Houver mistura de arquivos de competências diferentes.
-
-Não gerar relatório parcial quando a competência estiver incompleta.
-
-## Hierarquia das Fontes
-- **Muito alta:** Google Analytics 4, Google Search Console.
-- **Alta:** Monitoramento de Posição, Auditoria do Site.
-- **Média:** Backlinks, On Page SEO Checker.
-- **Baixa:** Keyword Strategy Tool.
-
-## Regras Obrigatórias
-- Nunca resumir PDF individualmente.
-- Produzir visão consolidada.
-- Não repetir métricas já existentes no Dashboard.
-- Explicar causas, impactos e recomendações.
-- Priorizar tendências sobre eventos isolados.
-- Destacar riscos e oportunidades.
-- Limite máximo aproximado de duas páginas.
-- Validar `manifest.json` antes da leitura dos PDFs.
-- Ler PDFs apenas em `reports/AAAA-MM/source/`.
-- Gravar análises individuais apenas em `reports/AAAA-MM/analysis/`.
-- Gravar o resumo executivo apenas em `reports/AAAA-MM/output/`.
-- Nunca misturar dados de competências diferentes.
-- Interromper a execução se arquivos obrigatórios estiverem ausentes.
-
-## Estrutura Obrigatória da Saída
-1. Resumo Geral.
-2. Pontos Fortes.
-3. Pontos de Atenção.
-4. Impacto Geral no Projeto.
-5. Recomendações Priorizadas.
-
-## Saídas Obrigatórias
-A execução deve produzir:
-
-- `reports/AAAA-MM/analysis/ga4_analise.md`
-- `reports/AAAA-MM/analysis/gsc_analise.md`
-- `reports/AAAA-MM/output/resumo_executivo.md`
-
-A versão `.docx` poderá ser produzida posteriormente a partir do Markdown final.
-
-## Estilo de Escrita
-O relatório deve ser redigido como um documento executivo de consultoria, nunca mencionando PDFs, relatórios ou nomes de arquivos, e nunca utilizando expressões como "o relatório mostra" ou "segundo o PDF". Utilizar linguagem analítica e direta.
-
-A escrita deve ser sintética, executiva e voltada para tomada de decisão. O texto final não deve parecer um resumo automatizado, mas uma análise consultiva consolidada.
 # 01 PROMPT RELATÓRIO EXECUTIVO
 
 # Relatório Executivo Mensal SFTL
@@ -109,7 +20,8 @@ Este prompt é responsável por orientar:
 - a consolidação do `resumo_executivo.md`;
 - a priorização dos achados mais relevantes;
 - a diferenciação entre fato, hipótese e recomendação;
-- a escrita executiva orientada à tomada de decisão.
+- a escrita executiva orientada à tomada de decisão;
+- a inclusão de evidências numéricas mínimas para sustentar conclusões.
 
 Este prompt não é responsável por gerar DOCX ou PDF.
 
@@ -182,8 +94,9 @@ Executar o processo nesta ordem:
 12. Gerar a análise individual de Google Search Console em `analysis/gsc_analise.md`.
 13. Correlacionar GA4, GSC, histórico, baseline e fontes complementares disponíveis.
 14. Priorizar os achados mais relevantes do período.
-15. Gerar o resumo executivo em `output/resumo_executivo.md`.
-16. Interromper a execução para revisão humana.
+15. Aplicar a camada mínima de evidência numérica.
+16. Gerar o resumo executivo em `output/resumo_executivo.md`.
+17. Interromper a execução para revisão humana.
 
 Nenhuma etapa de geração de DOCX ou PDF deve ocorrer neste fluxo.
 
@@ -243,6 +156,128 @@ Essas fontes devem ser utilizadas apenas quando trouxerem evidência útil para 
 
 ---
 
+# Camada Mínima de Evidência Numérica
+
+O relatório não deve repetir o Looker Studio, mas também não pode omitir os números essenciais que sustentam a leitura executiva.
+
+Toda afirmação de crescimento, queda, avanço, regressão, estabilidade, perda de eficiência ou ganho de eficiência deve estar acompanhada de pelo menos uma evidência numérica direta.
+
+Sempre que os dados estiverem disponíveis, informar:
+
+- valor do mês atual;
+- valor do mês anterior;
+- variação absoluta;
+- variação percentual.
+
+A camada mínima de evidência deve aparecer tanto nas análises individuais quanto no resumo executivo, de forma sintética e interpretativa.
+
+Não criar tabelas, salvo solicitação explícita do usuário.
+
+Não listar todas as métricas disponíveis.
+
+Selecionar apenas os números necessários para comprovar a leitura executiva.
+
+---
+
+# Indicadores Mínimos Obrigatórios por Fonte
+
+## GA4
+
+A análise individual de GA4 deve incluir, quando disponíveis:
+
+- sessões;
+- usuários;
+- novos usuários;
+- sessões engajadas;
+- taxa de engajamento;
+- tempo médio de engajamento;
+- eventos principais ou key events;
+- canal Organic Search;
+- canal Direct;
+- principais páginas com ganho;
+- principais páginas com queda;
+- principais países ou grupos com ganho;
+- principais países ou grupos com queda.
+
+Para cada indicador principal, registrar valor atual, valor anterior, variação absoluta e variação percentual.
+
+Para páginas, países e canais, priorizar os itens com maior impacto no período, não listas extensas.
+
+## Google Search Console
+
+A análise individual de GSC deve incluir, quando disponíveis:
+
+- cliques;
+- impressões;
+- CTR;
+- posição média;
+- principais páginas com ganho;
+- principais páginas com queda;
+- principais queries com ganho;
+- principais queries com queda;
+- principais países com ganho;
+- principais países com queda.
+
+Para cada indicador principal, registrar valor atual, valor anterior, variação absoluta e variação percentual.
+
+Para páginas, queries e países, priorizar os itens que explicam a tese central do período.
+
+---
+
+# Evidências Numéricas no Resumo Executivo
+
+O `resumo_executivo.md` deve conter um bloco curto de sustentação numérica dentro do `Resumo Geral` ou logo após ele.
+
+Esse bloco deve incluir, quando disponíveis:
+
+- principais variações de GA4;
+- principais variações de GSC;
+- páginas que mais explicam ganho e queda;
+- queries que mais explicam ganho e queda;
+- países ou grupos com maior impacto no período.
+
+O bloco deve ser curto e interpretativo.
+
+Exemplo de formato esperado:
+
+```text
+Em junho, as sessões passaram de X para Y, variação de Z%, enquanto os usuários passaram de X para Y. No Search Console, as impressões cresceram de X para Y, mas os cliques caíram de X para Y e a CTR passou de A% para B%. Esse comportamento sustenta a leitura de maior exposição orgânica com menor eficiência de captura.
+```
+
+---
+
+# Regra de Equilíbrio entre Síntese e Evidência
+
+Evitar excesso de números não significa omitir números essenciais.
+
+O relatório deve manter linguagem executiva, mas precisa permitir auditoria mínima da conclusão.
+
+Não escrever apenas:
+
+```text
+O tráfego caiu no período.
+```
+
+Escrever:
+
+```text
+As sessões caíram de X para Y, variação de Z%, indicando retração de acesso no período.
+```
+
+Não escrever apenas:
+
+```text
+A CTR piorou.
+```
+
+Escrever:
+
+```text
+A CTR passou de X% para Y%, enquanto as impressões cresceram, indicando perda de eficiência na conversão de visibilidade orgânica em clique.
+```
+
+---
+
 # Análises Individuais Obrigatórias
 
 ## GA4
@@ -265,7 +300,8 @@ A análise deve cobrir:
 - engajamento;
 - eventos e key events;
 - variações relevantes frente ao mês anterior;
-- leitura estratégica do comportamento observado.
+- leitura estratégica do comportamento observado;
+- camada mínima de evidência numérica.
 
 ## Google Search Console
 
@@ -286,7 +322,8 @@ A análise deve cobrir:
 - países quando aplicável;
 - crescimento ou retração de visibilidade;
 - oportunidades de SEO;
-- leitura estratégica do desempenho orgânico.
+- leitura estratégica do desempenho orgânico;
+- camada mínima de evidência numérica.
 
 Essas análises devem apoiar o resumo executivo, não substituir o resumo executivo.
 
@@ -339,6 +376,8 @@ Sempre diferenciar:
 - Nunca gerar análise antes da validação do `manifest.json`.
 - Nunca depender de renomeação manual dos PDFs.
 - Nunca repetir métricas operacionais em excesso quando elas já estiverem disponíveis no Looker Studio.
+- Nunca omitir números essenciais necessários para sustentar conclusões executivas.
+- Nunca afirmar crescimento, queda, avanço, regressão ou perda de eficiência sem evidência numérica quando os dados estiverem disponíveis.
 - Nunca transformar hipótese em fato.
 - Nunca apresentar causalidade sem evidência suficiente.
 - Nunca gerar DOCX ou PDF neste fluxo.
@@ -350,6 +389,7 @@ Sempre diferenciar:
 - Sempre ler PDFs apenas em `reports/AAAA-MM/source/`.
 - Sempre gravar análises individuais apenas em `reports/AAAA-MM/analysis/`.
 - Sempre gravar o resumo executivo apenas em `reports/AAAA-MM/output/`.
+- Sempre aplicar a camada mínima de evidência numérica.
 - Sempre interromper a execução após gerar `resumo_executivo.md`.
 
 ---
@@ -365,9 +405,12 @@ Apresentar a leitura executiva do período.
 Responder:
 
 - o desempenho geral evoluiu, regrediu ou ficou estável;
+- quais números sustentam essa leitura;
 - quais fatores explicam o comportamento observado;
 - quais canais, países, conteúdos ou indicadores foram decisivos;
 - qual é o impacto geral para o projeto.
+
+O Resumo Geral deve incluir um bloco curto de evidências numéricas mínimas.
 
 ## 2. Pontos Fortes
 
@@ -383,6 +426,8 @@ Priorizar:
 - evolução estrutural de SEO;
 - fortalecimento de autoridade quando houver evidência.
 
+Cada ponto forte deve incluir evidência numérica quando se referir a crescimento, avanço, ganho ou melhora.
+
 ## 3. Pontos de Atenção
 
 Destacar os principais riscos, quedas ou limitações do período.
@@ -396,6 +441,8 @@ Priorizar:
 - dependência excessiva de poucos canais ou páginas;
 - queda em países estratégicos;
 - problemas técnicos ou estruturais com impacto potencial.
+
+Cada ponto de atenção deve incluir evidência numérica quando se referir a queda, piora, perda ou regressão.
 
 ## 4. Impacto Geral no Projeto
 
@@ -457,6 +504,8 @@ O texto final deve parecer uma análise consolidada feita por consultoria, não 
 O resumo executivo deve ter no máximo duas páginas em sua versão final.
 
 A versão Markdown pode ser ligeiramente mais detalhada para facilitar revisão humana, mas deve manter concisão suficiente para conversão posterior em DOCX e PDF.
+
+A necessidade de evidência numérica não autoriza transformar o resumo executivo em relatório operacional extenso.
 
 ---
 

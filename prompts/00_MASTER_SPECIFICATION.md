@@ -1,67 +1,3 @@
-# Projeto SFTL - Nova Arquitetura de Geração de Relatórios Executivos
-
-## Objetivo
-
-A partir desta nova fase do projeto, o objetivo deixa de ser gerar diversas análises individuais de cada relatório exportado do SEMrush e passa a ser a construção de um único Relatório Executivo Mensal, com foco em tomada de decisão.
-
-Os relatórios técnicos continuarão sendo exportados e armazenados como documentação de apoio, porém deixarão de possuir análises individuais.
-
-As únicas exceções continuam sendo:
-
-- Google Analytics 4
-- Google Search Console
-
-Esses dois relatórios continuarão recebendo análises próprias, pois representam as principais fontes de dados de comportamento do usuário e desempenho orgânico. Caso o cliente deseje aprofundar alguma informação apresentada no relatório executivo, essas análises servirão como documentação complementar.
-
-# Arquitetura do Projeto
-
-Este documento representa a especificação mestre (Single Source of Truth) do projeto SFTL Reporting.
-
-Seu objetivo é documentar toda a arquitetura do projeto, incluindo estrutura de diretórios, fluxo de trabalho, responsabilidades de cada componente e regras gerais de funcionamento.
-
-Os demais arquivos da pasta `prompts` possuem responsabilidades específicas e complementam este documento.
-
-Toda alteração estrutural do projeto deverá ser refletida primeiramente neste arquivo.
-
-# Estrutura do Repositório
-
-```text
-SFTL-Reporting/
-├── reports/
-│   ├── AAAA-MM/
-│   │   ├── source/
-│   │   ├── analysis/
-│   │   ├── output/
-│   │   └── manifest.json
-├── history/
-│   ├── monthly/
-│   ├── indicadores_historicos.csv
-│   └── evolucao_mensal.md
-├── knowledge/
-│   ├── 01_PROJETO.md
-│   ├── 02_GRUPOS_SEMRUSH.md
-│   ├── 03_PAISES.md
-│   ├── 04_RELATORIOS.md
-│   ├── 05_INDICADORES.md
-│   ├── 06_OBJETIVOS.md
-│   ├── 07_TIMELINE.md
-│   ├── 08_DECISOES_ARQUITETURAIS.md
-│   ├── 09_BOAS_PRATICAS_SEO.md
-│   ├── 10_LICOES_APRENDIDAS.md
-│   └── 11_CHANGELOG.md
-├── prompts/
-│   ├── 00_MASTER_SPECIFICATION.md
-│   ├── 01_PROMPT_RELATORIO_EXECUTIVO.md
-│   ├── 02_ESTILO_DE_ESCRITA.md
-│   ├── 03_REGRAS_DE_ANALISE.md
-│   ├── 04_GLOSSARIO.md
-│   ├── 05_HISTORICO_DO_PROJETO.md
-│   ├── 06_HIPOTESES_E_CONFIANCA.md
-│   ├── 07_ESTILO_CONSULTIVO.md
-├── templates/
-├── scripts/
-└── README.md
-```
 
 ## reports/
 
@@ -569,7 +505,8 @@ sftl-reporting/
 │   ├── 04_GLOSSARIO.md
 │   ├── 05_HISTORICO_DO_PROJETO.md
 │   ├── 06_HIPOTESES_E_CONFIANCA.md
-│   └── 07_ESTILO_CONSULTIVO.md
+│   ├── 07_ESTILO_CONSULTIVO.md
+│   └── 08_RELATORIO_EXECUTIVO.md
 ├── templates/
 └── scripts/
 ```
@@ -748,9 +685,15 @@ Fornece contexto histórico permanente sobre evolução, decisões e mudanças r
 
 Define como declarar hipóteses, níveis de confiança, limitações dos dados e evidências necessárias para sustentar conclusões.
 
+
 ## 07_ESTILO_CONSULTIVO.md
 
 Define a abordagem consultiva das análises, priorizando impacto, decisão, risco, oportunidade e próximos passos.
+
+
+## 08_RELATORIO_EXECUTIVO.md
+
+Define o padrão do conteúdo consolidado do `resumo_executivo.md`, incluindo estrutura, critérios de seleção dos achados, uso de evidências numéricas, linguagem executiva e regras para transformar os dados da competência em decisão.
 
 ---
 
@@ -772,12 +715,17 @@ Responsável por analisar:
 - engajamento;
 - eventos;
 - conversões ou key events.
+- variações frente ao mês anterior;
+- principais páginas com ganho ou queda;
+- principais países ou grupos com ganho ou queda.
 
 Entrega obrigatória:
 
 ```text
 reports/AAAA-MM/analysis/ga4_analise.md
 ```
+
+A análise deve incluir camada mínima de evidência numérica, com valor atual, valor anterior, variação absoluta e variação percentual para os indicadores principais quando os dados estiverem disponíveis.
 
 ## Google Search Console
 
@@ -791,12 +739,18 @@ Responsável por analisar:
 - consultas;
 - países;
 - oportunidades orgânicas.
+- variações frente ao mês anterior;
+- principais páginas com ganho ou queda;
+- principais consultas com ganho ou queda;
+- principais países com ganho ou queda.
 
 Entrega obrigatória:
 
 ```text
 reports/AAAA-MM/analysis/gsc_analise.md
 ```
+
+A análise deve incluir camada mínima de evidência numérica, com valor atual, valor anterior, variação absoluta e variação percentual para os indicadores principais quando os dados estiverem disponíveis.
 
 ## SEMrush
 
@@ -812,6 +766,8 @@ Responsável por fornecer apoio estratégico e evidências complementares sobre:
 - visibilidade por país.
 
 Na arquitetura atual, relatórios do SEMrush não geram análises individuais obrigatórias, salvo se o usuário solicitar explicitamente. Eles devem ser utilizados como fonte de apoio para o resumo executivo, histórico, baseline e leitura estratégica.
+
+Quando utilizado no resumo executivo, o SEMrush também deve trazer evidência numérica suficiente para sustentar o achado, como posições, visibilidade, tráfego estimado, backlinks, domínios de referência, authority score, volume de problemas técnicos ou URLs afetadas.
 
 ---
 
@@ -895,6 +851,7 @@ Essas análises devem:
 
 - interpretar os dados do período;
 - comparar com o mês anterior;
+- informar valor atual, valor anterior, variação absoluta e variação percentual para os principais indicadores quando disponíveis;
 - identificar tendências;
 - apontar impactos estratégicos;
 - destacar riscos e oportunidades;
@@ -912,6 +869,7 @@ O resumo executivo deve:
 
 - ter foco em decisão executiva;
 - evitar repetição operacional de métricas já disponíveis no Looker Studio;
+- incluir camada mínima de evidência numérica para sustentar a tese central do período;
 - consolidar os achados de GA4, GSC e SEMrush quando aplicável;
 - apresentar evolução, regressão ou estabilidade;
 - evidenciar impactos no projeto;
@@ -970,8 +928,11 @@ Responder:
 
 - o que aconteceu no período em comparação ao período anterior;
 - se houve evolução, regressão ou estabilidade;
+- quais números sustentam essa leitura;
 - quais fatores explicam o comportamento observado;
 - qual é o impacto geral para o projeto.
+
+O Resumo Geral deve conter um bloco curto de evidências numéricas, incluindo os principais dados de GA4 e Google Search Console quando disponíveis.
 
 ## 2. Principais Pontos Positivos
 
@@ -1064,6 +1025,8 @@ Ele concentra:
 
 O resumo executivo deve complementar o dashboard, não repetir seus números de forma excessiva.
 
+Evitar repetição excessiva não significa omitir números essenciais. O resumo executivo deve trazer os dados mínimos necessários para que a conclusão seja auditável, especialmente quando afirmar crescimento, queda, avanço, regressão, estabilidade, ganho ou perda de eficiência.
+
 ---
 
 # Regras Obrigatórias de Análise
@@ -1073,6 +1036,8 @@ O resumo executivo deve complementar o dashboard, não repetir seus números de 
 - Nunca gerar análise antes da validação do `manifest.json`.
 - Nunca depender de renomeação manual dos PDFs.
 - Nunca repetir métricas operacionais em excesso quando já disponíveis no Looker Studio.
+- Nunca omitir números essenciais necessários para sustentar conclusões executivas.
+- Nunca afirmar crescimento, queda, avanço, regressão, estabilidade ou perda de eficiência sem evidência numérica quando os dados estiverem disponíveis.
 - Nunca transformar hipótese em fato.
 - Nunca apresentar causalidade sem evidência suficiente.
 - Nunca gerar DOCX ou PDF antes da aprovação humana.
@@ -1081,6 +1046,7 @@ O resumo executivo deve complementar o dashboard, não repetir seus números de 
 - Sempre diferenciar fato, hipótese e recomendação.
 - Sempre priorizar impacto estratégico.
 - Sempre registrar limitações dos dados quando existirem.
+- Sempre aplicar a camada mínima de evidência numérica nas análises individuais e no resumo executivo.
 - Sempre salvar arquivos dentro da competência ativa.
 - Sempre interromper após gerar `resumo_executivo.md`.
 - Sempre atualizar histórico e changelog somente após aprovação explícita do usuário.
@@ -1122,8 +1088,10 @@ O relatório mensal deve atender aos seguintes critérios:
 - ser objetivo;
 - ter foco executivo;
 - evitar excesso de métrica operacional;
+- incluir camada mínima de evidência numérica, com valor atual, valor anterior, variação absoluta e variação percentual para os principais indicadores quando disponíveis;
 - indicar o que mudou no período;
 - explicar por que a mudança é relevante;
+- indicar os números que sustentam as principais conclusões;
 - indicar impacto para o projeto;
 - separar fato de hipótese;
 - apresentar recomendações práticas;
@@ -1141,9 +1109,9 @@ Uma competência estará pronta para revisão humana quando:
 - os PDFs obrigatórios tiverem sido copiados para `source/`;
 - o `manifest.json` tiver sido validado;
 - o contexto completo tiver sido carregado;
-- `ga4_analise.md` tiver sido gerado;
-- `gsc_analise.md` tiver sido gerado;
-- `resumo_executivo.md` tiver sido gerado.
+- `ga4_analise.md` tiver sido gerado com camada mínima de evidência numérica;
+- `gsc_analise.md` tiver sido gerado com camada mínima de evidência numérica;
+- `resumo_executivo.md` tiver sido gerado com sustentação numérica para as conclusões principais.
 
 Uma competência estará operacionalmente concluída somente quando:
 

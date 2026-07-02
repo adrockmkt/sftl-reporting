@@ -1,35 +1,3 @@
-# Estilo de Escrita
-
-## Objetivo
-Este documento tem como objetivo padronizar o estilo de escrita de todos os relatórios executivos.
-
-## Público-Alvo
-Os relatórios são destinados a executivos, equipes de marketing, gerentes de projeto e stakeholders, devendo priorizar clareza em vez de profundidade técnica.
-
-## Tom de Voz
-O tom de voz deve ser consultivo, executivo, objetivo, analítico, imparcial, profissional e sem exageros.
-
-## Estrutura do Texto
-Todo relatório deve conter exatamente as seguintes seções, nesta ordem: Resumo Geral, Pontos Fortes, Pontos de Atenção, Impacto Geral no Projeto, Recomendações.
-
-## Tamanho Esperado
-O relatório completo deve ter até duas páginas; o Resumo Geral deve conter entre 8 e 12 linhas; os Pontos Fortes e Pontos de Atenção devem ser apresentados em bullets concisos; as Recomendações devem ser priorizadas.
-
-## Linguagem
-Escrever em português brasileiro, evitando jargões desnecessários, explicando brevemente conceitos técnicos quando necessário e utilizando voz ativa.
-
-## Expressões Proibidas
-Evitar as seguintes expressões: "o relatório mostra", "segundo o PDF", "foi possível observar", "de acordo com os dados", "conforme o relatório".
-
-## Boas Práticas
-Cada observação deve seguir a sequência: situação, impacto, recomendação; enfatizar tendências em vez de fatos isolados; evitar repetir métricas do dashboard.
-
-## Formatação
-Não utilizar emojis, tabelas, negrito excessivo, citações a documentos fonte; utilizar parágrafos concisos.
-
-## Personalidade do Documento
-O texto deve se assemelhar a uma opinião consultiva executiva escrita por um consultor sênior de SEO e análise digital, nunca soando como um resumo gerado por IA.
-
 # 02 ESTILO DE ESCRITA
 
 # Estilo de Escrita dos Relatórios SFTL
@@ -83,9 +51,10 @@ Evitar tom excessivamente promocional, alarmista, genérico ou automatizado.
 Cada trecho relevante deve responder, sempre que possível:
 
 1. O que aconteceu.
-2. Por que isso importa.
-3. Qual é o impacto para o projeto.
-4. O que deve ser feito a partir disso.
+2. Quais números sustentam a leitura.
+3. Por que isso importa.
+4. Qual é o impacto para o projeto.
+5. O que deve ser feito a partir disso.
 
 A análise não deve apenas informar uma métrica. Ela deve explicar a relevância estratégica da métrica.
 
@@ -121,6 +90,8 @@ Referência editorial:
 
 Evitar excesso de contexto histórico quando ele não for necessário para a decisão do mês.
 
+A inclusão da camada mínima de evidência numérica não autoriza transformar o relatório em documento operacional extenso.
+
 ---
 
 # Linguagem
@@ -155,6 +126,58 @@ O relatório executivo deve evitar:
 
 O detalhe técnico deve aparecer quando ajudar a explicar impacto, risco, oportunidade ou decisão.
 
+Evitar excesso de números não significa omitir números essenciais. Sempre que uma conclusão afirmar crescimento, queda, avanço, regressão, estabilidade, ganho ou perda de eficiência, o texto deve incluir evidência numérica mínima quando o dado estiver disponível.
+
+---
+
+# Uso de Métricas
+
+Métricas devem ser usadas com parcimônia, mas não devem ser omitidas quando sustentarem uma conclusão executiva.
+
+Incluir números quando eles forem necessários para:
+
+- comprovar uma variação relevante;
+- sustentar uma conclusão;
+- dimensionar impacto;
+- justificar uma recomendação;
+- comparar evolução frente ao mês anterior ou baseline;
+- identificar páginas, queries, canais, países ou grupos responsáveis pelo comportamento do período.
+
+Sempre que possível, informar:
+
+- valor do mês atual;
+- valor do mês anterior;
+- variação absoluta;
+- variação percentual.
+
+Evitar repetir números que já estejam disponíveis no Looker Studio sem adicionar interpretação.
+
+Sempre transformar métricas em leitura estratégica.
+
+Não escrever apenas:
+
+```text
+O tráfego caiu no período.
+```
+
+Preferir:
+
+```text
+As sessões passaram de X para Y, queda de Z%, indicando retração de acesso no período.
+```
+
+Não escrever apenas:
+
+```text
+A busca orgânica perdeu eficiência.
+```
+
+Preferir:
+
+```text
+No Search Console, as impressões cresceram de X para Y, mas os cliques caíram de A para B e a CTR passou de C% para D%, indicando perda de eficiência na conversão de visibilidade em clique.
+```
+
 ---
 
 # Como Escrever Pontos Fortes
@@ -162,6 +185,7 @@ O detalhe técnico deve aparecer quando ajudar a explicar impacto, risco, oportu
 Cada ponto forte deve apresentar:
 
 - avanço observado;
+- evidência numérica quando houver crescimento, ganho ou melhora;
 - impacto potencial ou real;
 - relevância para o projeto.
 
@@ -174,7 +198,7 @@ O tráfego apresentou bom desempenho.
 Preferir formulações analíticas como:
 
 ```text
-O crescimento do tráfego orgânico reforça a capacidade do site de atrair usuários qualificados sem dependência direta de mídia paga, ampliando a relevância estrutural do SEO no projeto.
+O tráfego orgânico cresceu de X para Y sessões, variação de Z%, reforçando a capacidade do site de atrair usuários qualificados sem dependência direta de mídia paga.
 ```
 
 ---
@@ -184,6 +208,7 @@ O crescimento do tráfego orgânico reforça a capacidade do site de atrair usu�
 Cada ponto de atenção deve apresentar:
 
 - situação observada;
+- evidência numérica quando houver queda, piora, perda ou regressão;
 - risco ou limitação;
 - possível implicação estratégica.
 
@@ -194,7 +219,7 @@ Evitar transformar qualquer queda pontual em problema estrutural.
 Preferir formulações proporcionais, como:
 
 ```text
-A queda de CTR exige acompanhamento, pois pode indicar menor atratividade dos resultados orgânicos ou maior competição nas SERPs. Ainda assim, a leitura deve ser confirmada nos próximos períodos antes de caracterizar uma tendência estrutural.
+A CTR passou de X% para Y%, queda de Z%, o que exige acompanhamento porque pode indicar menor atratividade dos resultados orgânicos ou maior competição nas SERPs. Ainda assim, a leitura deve ser confirmada nos próximos períodos antes de caracterizar uma tendência estrutural.
 ```
 
 ---
@@ -204,6 +229,8 @@ A queda de CTR exige acompanhamento, pois pode indicar menor atratividade dos re
 As recomendações devem ser práticas, priorizadas e conectadas aos achados do período.
 
 Cada recomendação deve indicar claramente a ação esperada.
+
+A recomendação deve ter relação direta com evidência, impacto ou hipótese relevante.
 
 Evitar recomendações genéricas como:
 
@@ -221,24 +248,6 @@ As recomendações devem ser classificadas por prioridade quando o resumo execut
 
 ---
 
-# Uso de Métricas
-
-Métricas devem ser usadas com parcimônia.
-
-Incluir números apenas quando eles forem necessários para:
-
-- comprovar uma variação relevante;
-- sustentar uma conclusão;
-- dimensionar impacto;
-- justificar uma recomendação;
-- comparar evolução frente ao mês anterior ou baseline.
-
-Evitar repetir números que já estejam disponíveis no Looker Studio sem adicionar interpretação.
-
-Sempre que possível, transformar métricas em leitura estratégica.
-
----
-
 # Uso de Hipóteses
 
 Quando a causa de uma variação não estiver comprovada, usar linguagem de hipótese.
@@ -252,6 +261,8 @@ Formulações recomendadas:
 - Não há evidência suficiente para afirmar causalidade direta.
 
 Evitar afirmações absolutas quando a evidência for limitada.
+
+Quando a hipótese estiver baseada em números, citar a evidência principal de forma sintética.
 
 ---
 
@@ -353,7 +364,8 @@ Antes de considerar o texto finalizado, validar:
 - o texto está em português brasileiro;
 - a leitura é executiva;
 - cada seção tem função clara;
-- os números usados são realmente necessários;
+- os números usados são necessários para sustentar conclusões;
+- não há afirmações de crescimento, queda, avanço, regressão, estabilidade, ganho ou perda de eficiência sem evidência numérica quando o dado está disponível;
 - os pontos fortes têm impacto estratégico;
 - os pontos de atenção não são alarmistas;
 - as recomendações são acionáveis;

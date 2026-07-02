@@ -1,258 +1,3 @@
-# Relatório Executivo
-
-## Objetivo
-
-Este documento define como o relatório executivo consolidado deverá ser produzido.
-
-O objetivo não é resumir os relatórios individuais.
-
-O objetivo é produzir uma visão estratégica única do período, utilizando todas as evidências disponíveis para explicar o que aconteceu no projeto, quais foram os impactos e quais ações devem ser priorizadas.
-
-O público deste documento é composto por gestores e tomadores de decisão.
-
----
-
-# Princípios
-
-O relatório executivo deverá:
-
-- contar uma única história sobre o período;
-- correlacionar todas as fontes analisadas;
-- priorizar interpretação em vez de descrição;
-- explicar impactos antes de apresentar recomendações;
-- destacar oportunidades e riscos;
-- utilizar linguagem consultiva.
-
-O relatório não deve parecer uma soma de diversos relatórios.
-
-O leitor deve perceber apenas uma análise integrada.
-
----
-
-# Fontes Obrigatórias
-
-Sempre correlacionar, quando disponíveis:
-
-- Google Analytics 4
-- Google Search Console
-- Site Audit
-- On Page SEO Checker
-- Keyword Strategy
-- Backlinks
-- Position Tracking
-- Histórico do projeto
-- Base de conhecimento (knowledge)
-
-Nenhuma fonte deve ser analisada isoladamente.
-
----
-
-# Estrutura Obrigatória
-
-## 1. Resumo Geral
-
-Responder obrigatoriamente:
-
-- O projeto evoluiu ou regrediu?
-- O principal comportamento do período.
-- O maior risco identificado.
-- A maior oportunidade identificada.
-
-Não repetir números.
-
-Explicar o cenário.
-
----
-
-## 2. Impacto Geral
-
-Explicar como os diferentes indicadores se relacionam.
-
-Exemplos:
-
-- crescimento de impressões sem crescimento de cliques;
-- melhora de rankings sem aumento de conversões;
-- aumento de tráfego sem melhora de engajamento;
-- evolução técnica sem reflexo imediato nos indicadores.
-
-Sempre explicar o impacto para o projeto.
-
-Nunca apenas listar métricas.
-
----
-
-## 3. Evolução do Projeto
-
-Sempre que houver histórico disponível explicar:
-
-- se o comportamento representa tendência;
-- se é um evento pontual;
-- quais iniciativas de SEO começaram a produzir resultado;
-- quais problemas continuam recorrentes;
-- quais recomendações anteriores foram atendidas.
-
-Caso não exista histórico suficiente:
-
-Informar essa limitação de forma natural.
-
----
-
-## 4. Países
-
-Sempre destacar:
-
-- principais evoluções;
-- principais quedas;
-- países que merecem prioridade;
-- países com melhor oportunidade.
-
-Nunca listar todos os países.
-
-Priorizar apenas os que realmente impactaram o período.
-
----
-
-## 5. Idiomas
-
-Sempre avaliar:
-
-- Português
-- Espanhol
-- Inglês
-
-Explicar:
-
-- qual idioma evoluiu;
-- qual perdeu desempenho;
-- possíveis impactos para o projeto.
-
----
-
-## 6. Conteúdos
-
-Destacar:
-
-- páginas de melhor desempenho;
-- páginas que perderam força;
-- temas com maior potencial;
-- conteúdos estratégicos;
-- oportunidades editoriais.
-
-Nunca transformar essa seção em uma tabela.
-
----
-
-## 7. SEO Técnico
-
-Consolidar em uma única visão:
-
-- Site Audit
-- On Page
-- rastreabilidade;
-- indexação;
-- canibalização;
-- duplicidades;
-- metadados;
-- problemas estruturais.
-
-Priorizar apenas aquilo que realmente afeta desempenho.
-
----
-
-## 8. Autoridade
-
-Consolidar:
-
-- backlinks;
-- autoridade;
-- toxicidade;
-- evolução do perfil de links.
-
-Explicar apenas o impacto.
-
----
-
-## 9. Keywords
-
-Consolidar:
-
-- evolução das palavras-chave;
-- intenção de busca;
-- oportunidades;
-- mercados;
-- tendências.
-
-Relacionar sempre com os conteúdos existentes.
-
----
-
-# Recomendações
-
-Sempre separar em:
-
-## Prioridade Imediata
-
-Ações que deverão ser executadas no próximo ciclo.
-
----
-
-## Próximo Ciclo
-
-Melhorias que dependem das ações imediatas.
-
----
-
-## Evolução Contínua
-
-Iniciativas estruturais de longo prazo.
-
----
-
-# Regras Obrigatórias
-
-- Nunca resumir individualmente os PDFs.
-- Nunca repetir números disponíveis no Looker Studio.
-- Nunca listar métricas sem interpretação.
-- Nunca repetir recomendações de meses anteriores sem contexto.
-- Nunca apresentar hipótese como fato.
-- Sempre explicar causa, impacto e consequência.
-- Sempre conectar diferentes fontes.
-- Sempre considerar o histórico do projeto.
-- Sempre considerar a base de conhecimento.
-- Sempre priorizar o que realmente influencia decisões.
-
----
-
-# Linguagem
-
-O relatório deverá parecer escrito por um consultor sênior.
-
-Evitar:
-
-- excesso de detalhes técnicos;
-- listas muito longas;
-- linguagem acadêmica;
-- linguagem excessivamente otimista;
-- linguagem excessivamente pessimista.
-
-Buscar equilíbrio entre riscos e oportunidades.
-
----
-
-# Resultado Esperado
-
-Ao terminar a leitura, o cliente deverá compreender:
-
-- como o projeto evoluiu no período;
-- quais iniciativas produziram resultado;
-- quais mercados merecem atenção;
-- quais idiomas evoluíram;
-- quais conteúdos foram destaque;
-- quais problemas continuam limitando o desempenho;
-- quais ações deverão ser priorizadas no próximo mês.
-
-O relatório deverá servir como documento executivo para tomada de decisão e complementar o Looker Studio, nunca substituí-lo.
-
 # 08 RELATÓRIO EXECUTIVO
 
 # Relatório Executivo Consolidado SFTL
@@ -266,6 +11,7 @@ O objetivo não é resumir relatórios individuais, PDFs técnicos ou dashboards
 O objetivo é produzir uma visão estratégica única do período, utilizando as evidências disponíveis para explicar:
 
 - o que aconteceu;
+- quais números sustentam a leitura;
 - por que aconteceu ou qual é a hipótese mais provável;
 - qual foi o impacto para o projeto;
 - quais riscos e oportunidades devem ser considerados;
@@ -298,6 +44,8 @@ Ele não deve parecer uma soma de análises separadas.
 O leitor deve perceber uma análise integrada, com conexão entre tráfego, busca orgânica, conteúdo, países, histórico e oportunidades estratégicas.
 
 A função do relatório é transformar dados em decisão.
+
+A síntese executiva deve ser objetiva, mas precisa ter evidência numérica suficiente para sustentar as conclusões principais.
 
 ---
 
@@ -352,6 +100,101 @@ Selecionar apenas achados que tenham impacto em pelo menos um dos pontos abaixo:
 
 Dados operacionais sem impacto estratégico devem permanecer nas análises intermediárias ou no Looker Studio.
 
+Entretanto, achados selecionados para o resumo executivo devem trazer evidência mínima quando indicarem crescimento, queda, avanço, regressão, estabilidade, ganho ou perda de eficiência.
+
+---
+
+# Camada Mínima de Evidência Numérica
+
+O relatório executivo não deve repetir o Looker Studio, mas precisa conter números suficientes para sustentar a tese central do período.
+
+Sempre que os dados estiverem disponíveis, as principais conclusões devem incluir:
+
+- valor do mês atual;
+- valor do mês anterior;
+- variação absoluta;
+- variação percentual.
+
+A camada mínima de evidência deve aparecer principalmente no `Resumo Geral`, nos `Pontos Fortes`, nos `Pontos de Atenção` e no `Impacto Geral no Projeto`.
+
+Não criar tabelas, salvo solicitação explícita do usuário.
+
+Não listar todas as métricas disponíveis.
+
+Selecionar apenas os números necessários para comprovar a leitura executiva.
+
+---
+
+# Indicadores Numéricos Mínimos no Resumo Executivo
+
+Quando disponíveis, o resumo executivo deve citar de forma sintética:
+
+## GA4
+
+- sessões;
+- usuários;
+- novos usuários;
+- sessões engajadas;
+- eventos principais ou key events;
+- canal Organic Search;
+- canal Direct;
+- principais páginas com ganho ou queda;
+- principais países ou grupos com ganho ou queda.
+
+## Google Search Console
+
+- cliques;
+- impressões;
+- CTR;
+- posição média;
+- principais páginas com ganho ou queda;
+- principais queries com ganho ou queda;
+- principais países com ganho ou queda.
+
+## SEMrush, quando relevante
+
+- variação de visibilidade;
+- posição média;
+- tráfego estimado;
+- backlinks;
+- domínios de referência;
+- autoridade;
+- principais problemas técnicos.
+
+SEMrush só deve entrar quando a evidência for relevante para explicar impacto, risco ou recomendação.
+
+---
+
+# Regra de Equilíbrio entre Síntese e Evidência
+
+Evitar excesso de números não significa omitir números essenciais.
+
+O relatório deve ser sintético, mas auditável.
+
+Não escrever apenas:
+
+```text
+O projeto teve queda de tráfego.
+```
+
+Escrever:
+
+```text
+As sessões passaram de X para Y, queda de Z%, enquanto os usuários recuaram de A para B. Esse movimento sustenta a leitura de retração de alcance no período.
+```
+
+Não escrever apenas:
+
+```text
+A busca orgânica perdeu eficiência.
+```
+
+Escrever:
+
+```text
+No Search Console, as impressões cresceram de X para Y, mas os cliques caíram de A para B e a CTR passou de C% para D%. Esse comportamento indica perda de eficiência na conversão de visibilidade em clique.
+```
+
 ---
 
 # Estrutura Obrigatória
@@ -365,11 +208,14 @@ Apresentar a leitura executiva do período.
 Responder, de forma sintética:
 
 - o projeto evoluiu, regrediu ou permaneceu estável;
+- quais números sustentam essa leitura;
 - qual foi o principal comportamento do período;
 - quais fatores explicam a leitura;
 - qual foi o maior risco identificado;
 - qual foi a maior oportunidade identificada;
 - qual é o impacto geral para o projeto.
+
+O `Resumo Geral` deve incluir um bloco curto de evidências numéricas, com os principais dados de GA4 e GSC.
 
 Evitar repetir números em excesso.
 
@@ -394,6 +240,8 @@ Exemplos de relações que devem ser avaliadas quando existirem:
 Sempre explicar o impacto para o projeto.
 
 Nunca apenas listar métricas.
+
+Quando a seção afirmar evolução, regressão, perda de eficiência ou ganho de eficiência, incluir evidência numérica de sustentação.
 
 ---
 
@@ -431,6 +279,8 @@ Não listar todos os países.
 
 Utilizar os grupos regionais oficiais quando isso ajudar a leitura estratégica.
 
+Quando houver dados disponíveis, citar os principais números de sessões, cliques, impressões, eventos, CTR ou posição média que sustentam a leitura regional.
+
 ---
 
 ## 5. Idiomas
@@ -453,6 +303,8 @@ A análise deve explicar:
 
 Se os dados de idioma não estiverem disponíveis ou não forem relevantes na competência, não forçar uma seção extensa.
 
+Quando a análise afirmar ganho ou perda por idioma, incluir números de páginas, sessões, cliques, impressões ou CTR que sustentem a leitura.
+
 ---
 
 ## 6. Conteúdos e Páginas Estratégicas
@@ -472,6 +324,8 @@ Priorizar:
 Não transformar a seção em inventário de URLs.
 
 A análise deve explicar por que as páginas ou temas citados são relevantes para o projeto.
+
+Sempre que possível, citar as principais páginas ou URLs com suas variações de sessões, cliques, impressões, CTR ou posição média.
 
 ---
 
@@ -497,6 +351,8 @@ Não tratar todo erro técnico como prioridade alta.
 
 Se não houver dado técnico relevante na competência, não forçar análise técnica extensa.
 
+Quando houver números técnicos relevantes, citar volume de URLs afetadas, variação ou prioridade relativa.
+
 ---
 
 ## 8. Autoridade e Backlinks
@@ -516,6 +372,8 @@ Explicar o impacto estratégico.
 
 Não afirmar que backlinks causaram melhoria de ranking sem evidência adicional.
 
+Quando houver dados disponíveis, citar números principais de backlinks, domínios de referência, authority score, toxicidade ou variação relevante.
+
 ---
 
 ## 9. Keywords e Intenção de Busca
@@ -534,6 +392,8 @@ Consolidar:
 Relacionar keywords com páginas e oportunidades de conteúdo.
 
 Não listar palavras-chave de forma excessiva.
+
+Sempre que possível, citar queries específicas com cliques, impressões, CTR ou posição média quando elas sustentarem a leitura executiva.
 
 ---
 
@@ -565,6 +425,8 @@ Ações complementares, refinamentos futuros ou iniciativas estruturais de longo
 - Nunca citar nomes de arquivos no texto final.
 - Nunca usar expressões como `segundo o PDF`, `o relatório mostra` ou `conforme o arquivo`.
 - Nunca repetir números disponíveis no Looker Studio sem interpretação.
+- Nunca omitir números essenciais necessários para sustentar conclusões executivas.
+- Nunca afirmar crescimento, queda, avanço, regressão, estabilidade ou perda de eficiência sem evidência numérica quando os dados estiverem disponíveis.
 - Nunca listar métricas sem explicar impacto.
 - Nunca repetir recomendações de meses anteriores sem contexto.
 - Nunca apresentar hipótese como fato.
@@ -577,6 +439,7 @@ Ações complementares, refinamentos futuros ou iniciativas estruturais de longo
 - Sempre explicar causa provável, impacto e consequência.
 - Sempre priorizar o que realmente influencia decisões.
 - Sempre conectar recomendações aos achados do período.
+- Sempre aplicar a camada mínima de evidência numérica.
 
 ---
 
@@ -606,6 +469,8 @@ Evitar:
 
 Buscar equilíbrio entre riscos e oportunidades.
 
+A necessidade de incluir evidência numérica não autoriza transformar o resumo executivo em um relatório operacional extenso.
+
 ---
 
 # Resultado Esperado
@@ -613,6 +478,7 @@ Buscar equilíbrio entre riscos e oportunidades.
 Ao terminar a leitura, o cliente deve compreender:
 
 - como o projeto evoluiu no período;
+- quais números sustentam essa leitura;
 - quais fatores explicam a evolução ou retração;
 - quais mercados merecem atenção;
 - quais idiomas ou conteúdos tiveram relevância;

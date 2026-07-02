@@ -449,7 +449,114 @@ Tem impacto importante em SEO e CTR.
 
 ---
 
+
 # Conceitos Analíticos
+
+## Evidência Numérica
+
+Dado quantitativo usado para sustentar uma conclusão analítica.
+
+Deve ser utilizado sempre que o texto afirmar crescimento, queda, avanço, regressão, estabilidade, ganho de eficiência ou perda de eficiência.
+
+Exemplo:
+
+```text
+As sessões passaram de X para Y, variação de Z%.
+```
+
+A evidência numérica não deve ser usada como transcrição do dashboard. Deve aparecer apenas quando ajudar a comprovar uma leitura executiva.
+
+## Camada Mínima de Evidência
+
+Conjunto mínimo de números que deve aparecer nas análises individuais e no resumo executivo para sustentar conclusões sem transformar o documento em relatório operacional.
+
+Deve incluir, quando disponível:
+
+- valor do mês atual;
+- valor do mês anterior;
+- variação absoluta;
+- variação percentual.
+
+A camada mínima de evidência deve ser aplicada principalmente a GA4 e Google Search Console, e também a SEMrush quando houver dado relevante para explicar impacto, risco ou recomendação.
+
+## Valor Atual
+
+Valor registrado para uma métrica na competência analisada.
+
+Exemplo:
+
+```text
+Sessões em junho de 2026.
+```
+
+## Valor Anterior
+
+Valor registrado para a mesma métrica na competência imediatamente anterior ou no período de comparação definido.
+
+Exemplo:
+
+```text
+Sessões em maio de 2026.
+```
+
+## Variação Absoluta
+
+Diferença numérica entre o valor atual e o valor anterior.
+
+Fórmula:
+
+```text
+variação absoluta = valor atual - valor anterior
+```
+
+Exemplo:
+
+```text
+Se as sessões passaram de 1.000 para 850, a variação absoluta foi de -150 sessões.
+```
+
+## Variação Percentual
+
+Percentual de aumento ou queda entre o valor atual e o valor anterior.
+
+Fórmula:
+
+```text
+variação percentual = (valor atual - valor anterior) / valor anterior
+```
+
+Exemplo:
+
+```text
+Se as sessões passaram de 1.000 para 850, a variação percentual foi de -15%.
+```
+
+A variação percentual deve ser interpretada com cautela em bases pequenas, porque mudanças pequenas em números absolutos podem gerar percentuais altos.
+
+## Base Pequena
+
+Situação em que uma métrica possui volume absoluto baixo e, por isso, pode gerar variações percentuais elevadas sem impacto estratégico proporcional.
+
+Exemplo:
+
+```text
+Uma página que passa de 1 para 4 cliques cresce 300%, mas ainda possui impacto limitado no desempenho total.
+```
+
+Quando a base for pequena, priorizar a leitura do impacto absoluto antes de destacar o percentual.
+
+## Métrica de Sustentação
+
+Métrica selecionada para comprovar uma conclusão específica.
+
+Não é qualquer métrica disponível. É o número necessário para sustentar uma leitura executiva.
+
+Exemplo:
+
+- para sustentar queda de tráfego: sessões, usuários ou canal de aquisição;
+- para sustentar perda de eficiência orgânica: cliques, impressões, CTR e posição média;
+- para sustentar oportunidade regional: país, sessões, cliques, impressões, eventos ou ranking monitorado;
+- para sustentar problema técnico: volume de URLs afetadas, severidade ou recorrência.
 
 ## Fato Observado
 
@@ -578,6 +685,58 @@ A padronização facilita consistência entre competências e conversão para DO
 ---
 
 # Termos que Exigem Cuidado
+
+## Crescimento
+
+Usar quando houver aumento mensurável em uma métrica.
+
+Sempre que possível, informar valor atual, valor anterior, variação absoluta e variação percentual.
+
+Evitar usar o termo quando houver apenas melhora percentual em base muito pequena sem impacto estratégico.
+
+## Queda
+
+Usar quando houver redução mensurável em uma métrica.
+
+Sempre que possível, informar valor atual, valor anterior, variação absoluta e variação percentual.
+
+Evitar tratar toda queda pontual como problema estrutural.
+
+## Avanço
+
+Usar quando houver melhora relevante para o projeto, sustentada por métrica, correlação entre fontes ou evolução histórica.
+
+Não usar como sinônimo genérico de qualquer variação positiva.
+
+## Regressão
+
+Usar quando houver piora relevante para o projeto, sustentada por métrica, correlação entre fontes ou evolução histórica.
+
+Não usar como sinônimo genérico de qualquer variação negativa.
+
+## Ganho de Eficiência
+
+Usar quando uma métrica indicar melhor aproveitamento de uma oportunidade existente.
+
+Exemplos:
+
+- aumento de CTR com volume relevante de impressões;
+- aumento de sessões engajadas em relação às sessões totais;
+- aumento de cliques sem crescimento proporcional de impressões;
+- melhora de posição média acompanhada de aumento de cliques.
+
+## Perda de Eficiência
+
+Usar quando uma métrica indicar pior aproveitamento de uma oportunidade existente.
+
+Exemplos:
+
+- aumento de impressões com queda de cliques;
+- queda de CTR;
+- aumento de tráfego sem aumento proporcional de engajamento;
+- melhora de visibilidade sem avanço em sessões ou eventos relevantes.
+
+Sempre sustentar a leitura com números quando os dados estiverem disponíveis.
 
 ## Crescimento Consistente
 
