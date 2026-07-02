@@ -1,0 +1,72 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Logs
+*.log
+logs/
+
+# Ambiente local
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Arquivos temporários
+tmp/
+temp/
+.cache/
+
+# PDFs originais das competências
+reports/*/source/*.pdf
+reports/*/source/*.PDF
+
+# Documentos finais gerados para cliente
+reports/*/output/*.docx
+reports/*/output/*.pdf
+reports/*/output/*.DOCX
+reports/*/output/*.PDF
+
+# Arquivos de exportação pesados
+*.zip
+*.rar
+*.7z
+
+# Mantém estrutura das pastas
+!reports/
+!reports/*/
+!reports/*/source/
+!reports/*/analysis/
+!reports/*/output/
+
+# Permite versionar markdowns e manifests
+!reports/*/analysis/*.md
+!reports/*/output/*.md
+!reports/*/manifest.json
+
+# Mantém .gitkeep nas pastas vazias
+!.gitkeep
