@@ -1,0 +1,173 @@
+{
+  "competencia": "2026-07",
+  "cliente": "Solve for Tomorrow Latam",
+  "status": "aprovado_e_encerrado_operacionalmente",
+  "source_dir": "reports/2026-07/source",
+  "analysis_dir": "reports/2026-07/analysis",
+  "output_dir": "reports/2026-07/output",
+  "required_reports": {
+    "google_analytics_4": {
+      "required": true,
+      "status": "present",
+      "match_contains": [
+        "Google_Analytics",
+        "Google Analytics",
+        "Analytics_v4"
+      ]
+    },
+    "google_search_console": {
+      "required": true,
+      "status": "present",
+      "match_contains": [
+        "Google_Search_Console",
+        "Google Search Console",
+        "Search_Console"
+      ]
+    },
+    "site_audit": {
+      "required": true,
+      "status": "present",
+      "match_contains": [
+        "Auditoria_do_site",
+        "Auditoria do site"
+      ]
+    },
+    "on_page_seo_checker": {
+      "required": true,
+      "status": "present",
+      "match_contains": [
+        "On_page_SEO_checker",
+        "On page SEO checker"
+      ]
+    },
+    "backlinks": {
+      "required": true,
+      "status": "present",
+      "match_contains": [
+        "Backlinks"
+      ]
+    },
+    "keyword_strategy": {
+      "required": true,
+      "status": "present",
+      "match_contains": [
+        "Estratégia_de_palavras_chave",
+        "Keyword Strategy"
+      ]
+    },
+    "position_tracking_groups": {
+      "required": true,
+      "status": "present",
+      "expected_groups": 7,
+      "found_groups": 7,
+      "match_contains": [
+        "Monitoramento_de_posição",
+        "Monitoramento de posição",
+        "Grupo_"
+      ]
+    }
+  },
+  "found_files": [
+    {
+      "type": "site_audit",
+      "file": "Semrush-Auditoria_do_site-Todos_os_grupos-3rd_Aug_2026.pdf"
+    },
+    {
+      "type": "keyword_strategy",
+      "file": "Semrush-Estratégia_de_palavras_chave-Por_país-3rd_Aug_2026.pdf"
+    },
+    {
+      "type": "on_page_seo_checker",
+      "file": "Semrush-On_page_SEO_checker-Todos_os_grupos_Erros_técnicos-3rd_Aug_2026.pdf"
+    },
+    {
+      "type": "backlinks",
+      "file": "Semrush-SFTL_-_Backlinks-Todos_os_grupos-3rd_Aug_2026.pdf"
+    },
+    {
+      "type": "google_analytics_4",
+      "file": "Semrush-SFTL_-_Google_Analytics_v4-Principais_indicadores_por_usuários-3rd_Aug_2026.pdf"
+    },
+    {
+      "type": "google_search_console",
+      "file": "Semrush-SFTL_-_Google_Search_Console-Principais_indicadores_com_relação_a_usuários_-3rd_Aug_2026.pdf"
+    },
+    {
+      "type": "position_tracking_group_1",
+      "file": "Semrush-SFTL_-_Monitoramento_de_posição-Grupo_1_Argentina___Uruguai___Chile_Desktop_e_mobi-3rd_Aug_2026.pdf"
+    },
+    {
+      "type": "position_tracking_group_2",
+      "file": "Semrush-SFTL_-_Monitoramento_de_posição-Grupo_2_Brasil___Paraguai___Bolívia_Desktop_e_mobi-3rd_Aug_2026.pdf"
+    },
+    {
+      "type": "position_tracking_group_3",
+      "file": "Semrush-SFTL_-_Monitoramento_de_posição-Grupo_3_Peru___Equador___Colômbia_Desktop_e_mobile-3rd_Aug_2026.pdf"
+    },
+    {
+      "type": "position_tracking_group_4",
+      "file": "Semrush-SFTL_-_Monitoramento_de_posição-Grupo_4_Venezuela___Panamá___Costa_Rica_Desktop_e_-3rd_Aug_2026.pdf"
+    },
+    {
+      "type": "position_tracking_group_5",
+      "file": "Semrush-SFTL_-_Monitoramento_de_posição-Grupo_5_Nicaraguá___El_Salvador___Honduras_Desktop-3rd_Aug_2026.pdf"
+    },
+    {
+      "type": "position_tracking_group_6",
+      "file": "Semrush-SFTL_-_Monitoramento_de_posição-Grupo_6_República_Dominicana___Belize___Guatemala_-3rd_Aug_2026.pdf"
+    },
+    {
+      "type": "position_tracking_group_7",
+      "file": "Semrush-SFTL_-_Monitoramento_de_posição-Grupo_7_México_Desktop_e_mobile-3rd_Aug_2026.pdf"
+    }
+  ],
+  "validation": {
+    "pdf_count": 13,
+    "missing_required_reports": [],
+    "unclassified_files": [],
+    "duplicate_report_types": [],
+    "source_only": true,
+    "ready_for_analysis": true
+  },
+  "review": {
+    "human_review_status": "approved",
+    "approved_at": "2026-08-03",
+    "approval_trigger": "APROVADO PARA ENCERRAMENTO"
+  },
+  "operational_closure": {
+    "status": "closed",
+    "closed_at": "2026-08-03",
+    "history_updated": true,
+    "knowledge_updated": true,
+    "changelog_updated": true
+  },
+  "validation_rules": {
+    "keep_original_filenames": true,
+    "do_not_rename_pdfs": true,
+    "read_only_from_source": true,
+    "fail_if_required_report_missing": true,
+    "fail_if_position_group_missing": true
+  },
+  "generated_outputs": {
+    "ga4_analysis": {
+      "path": "reports/2026-07/analysis/ga4_analise.md",
+      "status": "generated"
+    },
+    "gsc_analysis": {
+      "path": "reports/2026-07/analysis/gsc_analise.md",
+      "status": "generated"
+    },
+    "executive_summary": {
+      "path": "reports/2026-07/output/resumo_executivo.md",
+      "status": "generated"
+    },
+    "executive_summary_docx": {
+      "path": "reports/2026-07/output/resumo_executivo.docx",
+      "status": "not_generated_codex_pipeline"
+    },
+    "executive_summary_pdf": {
+      "path": "reports/2026-07/output/resumo_executivo.pdf",
+      "status": "not_generated_codex_pipeline"
+    }
+  }
+}

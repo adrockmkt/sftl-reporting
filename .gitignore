@@ -51,6 +51,16 @@ reports/*/output/*.pdf
 reports/*/output/*.DOCX
 reports/*/output/*.PDF
 
+# Artefatos operacionais gerados/editados mensalmente
+COMANDO.md
+prompts/**/*.md
+history/**/*.md
+history/**/*.csv
+knowledge/**/*.md
+reports/**/*.md
+reports/**/*.json
+instruções_SFTL/**/*.md
+
 # Arquivos de exportação pesados
 *.zip
 *.rar
@@ -62,11 +72,6 @@ reports/*/output/*.PDF
 !reports/*/source/
 !reports/*/analysis/
 !reports/*/output/
-
-# Permite versionar markdowns e manifests
-!reports/*/analysis/*.md
-!reports/*/output/*.md
-!reports/*/manifest.json
 
 # Mantém .gitkeep nas pastas vazias
 !.gitkeep
