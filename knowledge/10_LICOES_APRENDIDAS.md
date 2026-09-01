@@ -1,5 +1,13 @@
 # Lições Aprendidas
 
+## 2026-08
+
+- Quando o GA4 cresce fortemente por E-mail, social, WhatsApp ou páginas de campanha, a análise deve separar aquisição acionada de evolução orgânica recorrente antes de concluir recuperação estrutural.
+- Crescimento expressivo de `form_start` sem avanço proporcional de `form_submit` deve acionar investigação de jornada, tracking e qualidade do tráfego, não apenas comemoração de volume de leads.
+- Melhora de CTR com queda relevante de impressões deve ser tratada como ganho relativo de eficiência, não necessariamente como expansão de SEO.
+- Páginas institucionais podem perder força orgânica mesmo quando o tráfego total cresce; nesses casos, a análise deve cruzar GSC e GA4 para evitar que campanhas ocultem perda de visibilidade recorrente.
+- Oportunidades regionais emergentes devem ser validadas em pelo menos mais um ciclo quando o ganho aparece em páginas de país com baixo volume absoluto.
+
 ## 2026-07
 
 - Quando a posição média melhora, mas cliques e CTR caem, a análise deve evitar interpretar ranking como recuperação automática; a prioridade deve ser avaliar intenção de busca, atratividade dos snippets e distribuição das impressões por página.

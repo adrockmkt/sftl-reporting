@@ -1,5 +1,50 @@
 # Evolução Mensal - SFTL Reporting
 
+## 2026-08
+
+Competência encerrada operacionalmente em 2026-09-01.
+
+### Principais números aprovados
+
+- Sessões: 14,26 mil em agosto contra 3.098 em julho, aumento aproximado de 11,16 mil sessões (+359,9%).
+- Usuários: 10,65 mil em agosto contra 2.439 em julho, aumento aproximado de 8,21 mil usuários (+336,5%).
+- Novos usuários: 10,35 mil em agosto contra 2.297 em julho, aumento aproximado de 8,05 mil (+351,8%).
+- Pesquisa orgânica: 1.384 usuários contra 1.281 em julho, ganho de 103 usuários (+8,0%).
+- Direto: 1.623 usuários contra 967 em julho, ganho de 656 usuários (+67,8%).
+- E-mail: 4.268 usuários contra 30 em julho, tornando-se o principal canal do mês.
+- Orgânica de redes sociais: 1.931 usuários contra 19 em julho, assumindo papel relevante na aquisição.
+- Cliques orgânicos: 1.380 contra 1.458 em julho, queda de 78 cliques (-5,4%).
+- Impressões orgânicas: 296.295 contra 469.822 em julho, queda de 173.527 (-36,9%).
+- CTR médio: 0,47% contra 0,31% em julho, aumento de 0,16 p.p. (+50,1%).
+- Posição média: aproximadamente 7, estável frente a julho.
+- Página com maior ganho operacional: `/porvir/inscricao-pbl-whats-esp-26`, com 4.181 sessões e 2.403 sessões engajadas em agosto, contra 17 sessões e 9 sessões engajadas em julho.
+- Página com maior queda orgânica: `/en/`, com cliques de 286 para 161 (-43,7%) e sessões de 337 para 197 (-41,5%).
+- Consulta com destaque positivo: `solve for tomorrow 2026`, com cliques de 2 para 10 (+400,0%) e CTR de 0,63% para 3,91%.
+- Consulta com maior ponto de atenção: `solve for tomorrow`, com cliques de 158 para 63 (-60,1%), impressões de 4.692 para 3.353 (-28,5%) e CTR de 3,37% para 1,88%.
+- Eventos principais: `form_start` cresceu de 59 para 3.545; `form_submit` cresceu de 32 para 40 (+25,0%); `page_view` cresceu de 4.492 para 21.478 (+378,2%).
+
+### Principais conclusões
+
+Agosto interrompeu a sequência de queda de sessões e usuários registrada em junho e julho, mas a recuperação foi puxada principalmente por canais de campanha e páginas de inscrição, não por expansão orgânica ampla. E-mail, redes sociais, WhatsApp e páginas `/porvir/` explicam grande parte do salto de tráfego e atividade.
+
+O Google Search Console apresentou comportamento divergente: os cliques orgânicos caíram 5,4% e as impressões recuaram 36,9%, enquanto a CTR melhorou de 0,31% para 0,47%. A melhora de CTR indica ganho relativo de eficiência, mas em uma base menor de exposição. Por isso, agosto deve ser tratado como avanço de aquisição e jornada, não como recuperação estrutural de SEO.
+
+As páginas institucionais `/en/` e `/es/` seguiram como pontos de atenção orgânica, com queda relevante de cliques. Em contrapartida, conteúdos educacionais específicos avançaram, como biodigestor, água tratada, aprendizagem baseada em projetos e pitch em espanhol. Regionalmente, Argentina e Bolívia apareceram como oportunidades emergentes, enquanto Paraguai perdeu força após o destaque de julho.
+
+### Recomendações aprovadas
+
+- Separar a análise de campanha da análise orgânica recorrente no próximo ciclo, acompanhando E-mail, social, WhatsApp, Direto e Pesquisa orgânica de forma isolada.
+- Investigar a eficiência da jornada de inscrição, especialmente a diferença entre `form_start`, que passou de 59 para 3.545 eventos, e `form_submit`, que passou de 32 para 40.
+- Recuperar cliques em páginas institucionais de alto peso, começando por `/en/` e `/es/`.
+- Preservar os ganhos de páginas educacionais que avançaram no GSC, reforçando links internos e aderência dos snippets.
+- Acompanhar Argentina e Bolívia como oportunidades regionais emergentes, validando recorrência no próximo ciclo.
+- Revisar páginas com alto volume de impressões e CTR ainda baixa, especialmente conteúdos de pitch e páginas educacionais amplas.
+- Monitorar backlinks e toxicidade sem ações amplas antes de revisão manual.
+
+### Leitura de evolução
+
+Avanço operacional com cautela orgânica. O projeto recuperou fortemente volume de tráfego, usuários e eventos, mas essa evolução veio principalmente de campanha e páginas de inscrição. A frente orgânica ainda exige acompanhamento, porque perdeu cliques e impressões no Search Console, apesar da melhora de CTR. O próximo ciclo deve verificar se o tráfego adquirido retorna, se a jornada de formulário ganha eficiência e se as páginas institucionais recuperam força orgânica.
+
 ## 2026-07
 
 Competência encerrada operacionalmente em 2026-08-03.
